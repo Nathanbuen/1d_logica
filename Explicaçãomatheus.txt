@@ -1,0 +1,4 @@
+O uso do HTML define o tipo de documento e idioma da pagina, dentro do head é definido as metatags para  codificação dos caracteres, para ajustar a escala do layout para vários dispositivos. O title define o título da pagina como "calculadora". O style define o estilo visual da calculadora, mudando cor e tamanho. O body faz com que os números apareçam na calculadora.
+O CSS define o estilo visual da calculadora, dando a função de você ajustar o estulo.
+O javascript da a função de interagir com a calculadora e realizar as operações
+O prompt é responsável por adicionar uma caixa de texto que te permite trocar as cores da calculadora, escrevendo elas em inglês
