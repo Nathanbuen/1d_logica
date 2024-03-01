@@ -87,17 +87,20 @@
         <input type="button" value="3" onclick="addToDisplay('3')" id="button-3">
         <input type="button" value="4" onclick="addToDisplay('4')" id="button-4">
         <input type="button" value="5" onclick="addToDisplay('5')" id="button-5">
+        <br>
         <input type="button" value="6" onclick="addToDisplay('6')" id="button-6">
         <input type="button" value="7" onclick="addToDisplay('7')" id="button-7">
         <input type="button" value="8" onclick="addToDisplay('8')" id="button-8">
         <input type="button" value="9" onclick="addToDisplay('9')" id="button-9">
-        <input type="button" value="0" onclick="addToDisplay('0')" id="button-0">  
+        <input type="button" value="0" onclick="addToDisplay('0')" id="button-0">
+        <br>
         <input type="button" value="/" onclick="addToDisplay('/')" id="button-divide">
         <input type="button" value="*" onclick="addToDisplay('*')" id="button-multiply">
         <input type="button" value="-" onclick="addToDisplay('-')" id="button-minus">
         <input type="button" value="+" onclick="addToDisplay('+')" id="button-plus">
         <input type="button" value="C" onclick="clearDisplay()" class="clear">
         <input type="button" value="=" onclick="calculate()" id="button-equal">
+        <input type="button" value="%" onclick="addToDisplay('%')" id="button-percent">
         <button class="color-button" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
     </div>
 
@@ -121,24 +124,4 @@
             if (newColor !== null) {
                 switch(newColor.toLowerCase()) {
                     case "red":
-                        newColor = "#ff0000"; // Vermelho
-                        break;
-                    case "green":
-                        newColor = "#008000"; // Verde
-                        break;
-                    case "blue":
-                        newColor = "#0000ff"; // Azul
-                        break;
-                    case "yellow":
-                        newColor = "#ffff00"; // Amarelo
-                        break;
-                    case "purple":
-                        newColor = "#800080"; // Roxo
-                        break;
-                }
-                document.querySelector('.calculator').style.backgroundColor = newColor;
-            }
-        }
-    </script>
-</body>
-</html>
+                        newColor
