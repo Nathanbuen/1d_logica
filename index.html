@@ -44,7 +44,6 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 18px;
-            background-color: #f9f9f9;
             transition: background-color 0.3s ease;
             outline: none;
         }
@@ -69,25 +68,25 @@
 <body>
     <div class="calculator">
         <input type="text" id="display" readonly>
-        <input type="button" value="7" onclick="addToDisplay('7')">
-        <input type="button" value="8" onclick="addToDisplay('8')">
-        <input type="button" value="9" onclick="addToDisplay('9')">
-        <input type="button" value="/" onclick="addToDisplay('/')">
+        <input type="button" value="7" onclick="addToDisplay('7')" id="button-7">
+        <input type="button" value="8" onclick="addToDisplay('8')" id="button-8">
+        <input type="button" value="9" onclick="addToDisplay('9')" id="button-9">
+        <input type="button" value="/" onclick="addToDisplay('/')" id="button-divide">
         <br>
-        <input type="button" value="4" onclick="addToDisplay('4')">
-        <input type="button" value="5" onclick="addToDisplay('5')">
-        <input type="button" value="6" onclick="addToDisplay('6')">
-        <input type="button" value="*" onclick="addToDisplay('*')">
+        <input type="button" value="4" onclick="addToDisplay('4')" id="button-4">
+        <input type="button" value="5" onclick="addToDisplay('5')" id="button-5">
+        <input type="button" value="6" onclick="addToDisplay('6')" id="button-6">
+        <input type="button" value="*" onclick="addToDisplay('*')" id="button-multiply">
         <br>
-        <input type="button" value="1" onclick="addToDisplay('1')">
-        <input type="button" value="2" onclick="addToDisplay('2')">
-        <input type="button" value="3" onclick="addToDisplay('3')">
-        <input type="button" value="-" onclick="addToDisplay('-')">
+        <input type="button" value="1" onclick="addToDisplay('1')" id="button-1">
+        <input type="button" value="2" onclick="addToDisplay('2')" id="button-2">
+        <input type="button" value="3" onclick="addToDisplay('3')" id="button-3">
+        <input type="button" value="-" onclick="addToDisplay('-')" id="button-minus">
         <br>
         <input type="button" value="C" onclick="clearDisplay()" class="clear">
-        <input type="button" value="0" onclick="addToDisplay('0')">
-        <input type="button" value="=" onclick="calculate()">
-        <input type="button" value="+" onclick="addToDisplay('+')">
+        <input type="button" value="0" onclick="addToDisplay('0')" id="button-0">
+        <input type="button" value="=" onclick="calculate()" id="button-equal">
+        <input type="button" value="+" onclick="addToDisplay('+')" id="button-plus">
     </div>
 
     <script>
@@ -103,6 +102,20 @@
             var expression = document.getElementById('display').value;
             var result = eval(expression);
             document.getElementById('display').value = result;
+        }
+
+        function changeColor(color) {
+            var buttons = document.getElementsByTagName('input');
+            var backgroundColor = color;
+            var buttonColor = '#f9f9f9';
+            if (color === '#fff') {
+                buttonColor = '#000';
+            }
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].style.backgroundColor = buttonColor;
+                buttons[i].style.color = backgroundColor;
+            }
+            document.querySelector('.calculator').style.backgroundColor = color;
         }
     </script>
 </body>
