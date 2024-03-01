@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -63,6 +64,19 @@
             background-color: #ff7f50;
             border-color: #ff7f50;
         }
+
+        .color-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            outline: none;
+        }
     </style>
 </head>
 <body>
@@ -87,6 +101,7 @@
         <input type="button" value="0" onclick="addToDisplay('0')" id="button-0">
         <input type="button" value="=" onclick="calculate()" id="button-equal">
         <input type="button" value="+" onclick="addToDisplay('+')" id="button-plus">
+        <button class="color-button" onclick="changeBackgroundColor()">Mudar Cor de Fundo</button>
     </div>
 
     <script>
@@ -104,18 +119,28 @@
             document.getElementById('display').value = result;
         }
 
-        function changeColor(color) {
-            var buttons = document.getElementsByTagName('input');
-            var backgroundColor = color;
-            var buttonColor = '#f9f9f9';
-            if (color === '#fff') {
-                buttonColor = '#000';
+        function changeBackgroundColor() {
+            var newColor = prompt("Digite uma cor em hexadecimal (por exemplo, #ff0000 para vermelho) ou selecione uma cor: \n\n1 - Vermelho\n2 - Verde\n3 - Azul\n4 - Amarelo\n5 - Roxo");
+            if (newColor !== null) {
+                switch(newColor) {
+                    case "1":
+                        newColor = "#ff0000"; // Vermelho
+                        break;
+                    case "2":
+                        newColor = "#00ff00"; // Verde
+                        break;
+                    case "3":
+                        newColor = "#0000ff"; // Azul
+                        break;
+                    case "4":
+                        newColor = "#ffff00"; // Amarelo
+                        break;
+                    case "5":
+                        newColor = "#800080"; // Roxo
+                        break;
+                }
+                document.querySelector('.calculator').style.backgroundColor = newColor;
             }
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].style.backgroundColor = buttonColor;
-                buttons[i].style.color = backgroundColor;
-            }
-            document.querySelector('.calculator').style.backgroundColor = color;
         }
     </script>
 </body>
