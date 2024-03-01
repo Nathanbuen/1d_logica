@@ -3,140 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>city wave, the best of streetwear.</title>
+    <title>Calculadora</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 960px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        h1 {
-            margin-top: 0;
-        }
-        .product {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 10px;
+
+        .calculator {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
             background-color: #fff;
-            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .product img {
-            max-width: 100%;
-            height: auto;
+
+        input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
             border-radius: 5px;
+            font-size: 18px;
+            text-align: right;
+            box-sizing: border-box;
+            outline: none;
         }
-        .product p {
-            margin: 10px 0 0;
-            font-weight: bold;
+
+        input[type="button"] {
+            width: 23%;
+            padding: 15px;
+            margin: 1%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        input[type="button"]:hover {
+            background-color: #eaeaea;
+        }
+
+        .clear {
+            width: 100%;
+            background-color: #ff6347;
+            color: #fff;
+            border-color: #ff6347;
+        }
+
+        .clear:hover {
+            background-color: #ff7f50;
+            border-color: #ff7f50;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>citywave</h1>
-    </header>
-    <nav>
-        <a href="#camisas">Camisetas</a>
-        <a href="#calcas">Calças</a>
-        <a href="#bermudas">Bermudas</a>
-        <a href="#tenis">Tênis</a>
-        <a href="#sapatos">Sapatos</a>
-    </nav>
-    <div class="container">
-        <section id="camisas">
-            <h2>Camisetas</h2>
-            <div class="product">
-  <a href="https://shp.ee/4in6bb9" target="_blank">
-                    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fdown-br.img.susercontent.com%2Ffile%2Fsg-11134201-22100-ciwkhy2qz8iv8e&tbnid=WrHMa86CwWKYOM&vet=12ahUKEwjr9_2Un5qEAxWHjJUCHfMoDQ4QMygCegUIARCbAQ..i&imgrefurl=https%3A%2F%2Fshopee.com.br%2Flist%2FUs%2520Drip%3Fpage%3D2%26utm_campaign%3D-%26utm_content%3DSHPachadinhosPOCMyListKeywordsMarketplaces2023-cupom-shopee-brasil-usdrip%26utm_medium%3Daffiliates%26utm_source%3Dan_18375340002&docid=injc8eAdVeLidM&w=800&h=800&q=camiseta%20canelada%20us%20drip&client=ms-android-xiaomi-rvo3&ved=2ahUKEwjr9_2Un5qEAxWHjJUCHfMoDQ4QMygCegUIARCbAQ" alt="blank">
-                </a>
-                <p>Preço: R$ 52,90 (em promoção)</p>
-            </div>
-            <div class="product">
-                <a href="https://shp.ee/4in6bb9" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Camiseta Shopee">
-                </a>
-                <p>Preço: R$ 19,99 (em promoção)</p>
-            </div>
-        </section>
-        <section id="calcas">
-            <h2>Calças</h2>
-            <div class="product">
-                <a href="https://br.shein.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/3.jpg" alt="Calça Shein">
-                </a>
-                <p>Preço: R$ 59,90 (em promoção)</p>
-            </div>
-            <div class="product">
-                <a href="https://shopee.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/4.jpg" alt="Calça Shopee">
-                </a>
-                <p>Preço: R$ 39,99 (em promoção)</p>
-            </div>
-        </section>
-        <section id="bermudas">
-            <h2>Bermudas</h2>
-            <div class="product">
-                <a href="https://br.shein.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/5.jpg" alt="Bermuda Shein">
-                </a>
-                <p>Preço: R$ 39,90 (em promoção)</p>
-            </div>
-            <div class="product">
-                <a href="https://shopee.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/6.jpg" alt="Bermuda Shopee">
-                </a>
-                <p>Preço: R$ 29,99 (em promoção)</p>
-            </div>
-        </section>
-        <section id="tenis">
-            <h2>Tênis</h2>
-            <div class="product">
-                <a href="https://br.shein.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/7.jpg" alt="Tênis Shein">
-                </a>
-                <p>Preço: R$ 99,90 (em promoção)</p>
-            </div>
-            <div class="product">
-                <a href="https://shopee.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/8.jpg" alt="Tênis Shopee">
-                </a>
-                <p>Preço: R$ 79,99 (em promoção)</p>
-            </div>
-        </section>
-        <section id="sapatos">
-            <h2>Sapatos</h2>
-            <div class="product">
-                <a href="https://br.shein.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/9.jpg" alt="Sapato Shein">
-                </a>
-                <p>Preço: R$ 129,90 (em promoção)</p>
-            </div>
-            <div class="product">
-                <a href="https://shopee.com/" target="_blank">
-                    <img src="https://www.gstatic.com/webp/gallery/10.jpg" alt="Sapato Sh
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+        <br>
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="*" onclick="addToDisplay('*')">
+        <br>
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+        <br>
+        <input type="button" value="C" onclick="clearDisplay()" class="clear">
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+    </div>
+
+    <script>
+        function addToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function calculate() {
+            var expression = document.getElementById('display').value;
+            var result = eval(expression);
+            document.getElementById('display').value = result;
+        }
+    </script>
+</body>
+</html>
